@@ -5,23 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class loginactivity extends AppCompatActivity {
 
-    ImageButton arrowbtn;
+    Button btn1, btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_loginactivity);
 
-        arrowbtn = findViewById(R.id.arrow_btn);
+        btn2 = findViewById(R.id.createacc_btn);
 
-        arrowbtn.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, loginactivity.class);
+                Intent intent = new Intent(loginactivity.this, create_account.class);
                 startActivity(intent);
             }
         });
