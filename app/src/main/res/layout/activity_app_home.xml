@@ -13,18 +13,15 @@
         android:layout_height="65dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="592dp"
         android:background="#00FFFFFF"
         android:text="Generate Password"
         android:textColor="@color/white"
         android:textSize="17dp"
         app:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toEndOf="@+id/acc_btn"
-        app:layout_constraintTop_toTopOf="@+id/acc_btn"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/acc_btn" />
 
     <TextView
         android:id="@+id/textView8"
@@ -46,17 +43,16 @@
         android:id="@+id/acc_btn"
         android:layout_width="185dp"
         android:layout_height="65dp"
+        android:layout_marginTop="20dp"
         android:background="#00FFFFFF"
         android:text="ACCOUNTS"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -70,12 +66,14 @@
         app:srcCompat="@drawable/add_acc" />
 
     <ListView
+        android:id="@+id/lv_list"
         android:layout_width="393dp"
         android:layout_height="437dp"
+        android:background="#C4D4E8"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acc_btn"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintVertical_bias="0.222" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
