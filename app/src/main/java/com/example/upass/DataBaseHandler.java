@@ -74,9 +74,6 @@ public class DataBaseHandler extends SQLiteOpenHelper {
             } while(cursor.moveToNext());
 
 
-        }else {
-
-
         }
 
         cursor.close();

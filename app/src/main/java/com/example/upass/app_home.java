@@ -16,7 +16,7 @@ import java.util.List;
 
 public class app_home extends AppCompatActivity {
 
-    Button b1,b2;
+    Button b1;
     ImageButton b3;
     ArrayAdapter dataArrayAdapter;
     ListView lv_list;
@@ -27,7 +27,6 @@ public class app_home extends AppCompatActivity {
         setContentView(R.layout.activity_app_home);
 
         b1 = findViewById(R.id.acc_btn);
-        b2 = findViewById(R.id.button2);
         b3 = findViewById(R.id.imageButton);
         lv_list = findViewById(R.id.lv_list);
 
@@ -40,13 +39,6 @@ public class app_home extends AppCompatActivity {
 
                 dataArrayAdapter = new ArrayAdapter<PasswordData>(app_home.this, android.R.layout.simple_list_item_1,all);
                 lv_list.setAdapter(dataArrayAdapter);
-                Toast.makeText(app_home.this,all.toString(),Toast.LENGTH_SHORT).show();
-
-            }
-        });
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
             }
         });

@@ -22,14 +22,12 @@ public class PasswordData {
 
     @Override
     public String toString() {
-        return "PasswordData{" +
-                "id=" + id +
-                ", email_id='" + email_id + '\'' +
-                ", password='" + password + '\'' +
-                ", url='" + url + '\'' +
-                '}';
+        return
+                " Email id  =  " + email_id +  "\n"+
+                " Password  =  " + password + "\n"+
+                " Url  =  " + url
+                ;
     }
-
 
     //getters and setters
 
